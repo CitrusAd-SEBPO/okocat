@@ -516,6 +516,9 @@ h2.citrusOkocat__sectionTitle {
 
 -----------------------*/
 /* product catalog styles */
+.citrusOkocat__findCatRecipesContainer {
+  margin-top: 40px;
+}
 .citrusOkocat__productContainer {
   width: 1332px;
   max-width: 95%;
