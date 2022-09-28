@@ -387,7 +387,6 @@
         document.querySelectorAll('.citrus_Okocat_carousel-indicators span').forEach(item => {
             item.addEventListener('click', (e) => {
                 let slideTo = parseInt(e.target.dataset.slideTo);
-
                 let indicators = document.querySelectorAll('.citrus_Okocat_carousel-indicators span');
 
                 indicators.forEach((item, index) => {
@@ -395,7 +394,6 @@
                         activeIndicator = index
                     }
                 })
-
                 if (slideTo - activeIndicator > 1) {
                     jump = slideTo - activeIndicator;
                     step = jump * step;
@@ -453,7 +451,7 @@
                 citrus_Okocat_carouselInner.prepend(citrus_Okocat_carouselInner.lastElementChild);
             };
 
-            citrus_Okocat_carousel.style.justifyContent = 'Okocatpet-flex-start';
+            citrus_Okocat_carousel.style.justifyContent = 'flex-start';
             citrus_Okocat_carouselInner.style.transform = `translateX(-${step}%)`;
         };
 
@@ -462,8 +460,9 @@
                 direction = 1;
                 citrus_Okocat_carouselInner.append(citrus_Okocat_carouselInner.firstElementChild);
             };
-            citrus_Okocat_carousel.style.justifyContent = 'Okocatpet-flex-end'
+            citrus_Okocat_carousel.style.justifyContent = 'flex-end'
             citrus_Okocat_carouselInner.style.transform = `translateX(${step}%)`;
+            loop(false)
         };
 
         function loop(status) {

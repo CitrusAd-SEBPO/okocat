@@ -63,12 +63,15 @@ body {
 .citrus_Okocat_carousel {
   width: 100%;
   position: relative;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .citrus_Okocat_carousel
   .citrus_Okocat_carousel-inner
   .citrus_Okocat_carousel-item {
   justify-content: flex-start;
+  flex: 1;
 }
 
 .citrus_Okocat_carousel
@@ -154,10 +157,6 @@ body {
 /* -----------------------------
 ------------------------------
 */
-.citrus_Okocat_carousel {
-  width: 100%;
-  position: relative;
-}
 
 .citrus_Okocat_carousel-inner {
   display: flex;
@@ -377,6 +376,7 @@ body {
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
+    flex: 1;
   }
 
   .citrus_Okocat_carousel
