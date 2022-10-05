@@ -39,7 +39,7 @@
     .citrus_Okocat_carousel {
         width: 100%;
         position: relative;
-        display: flex;
+        display: none;
         justify-content: flex-start;
     }
 
@@ -1087,4 +1087,8 @@ Responsive styles
             clearInterval(time);
         }
     }
+    // pov loader add. before full load js pov none.
+    document.addEventListener('DOMContentLoaded', function () {
+        citrus_Okocat_carousel.style.display = 'flex';
+    });
 </script>

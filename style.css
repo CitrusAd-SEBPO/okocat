@@ -63,7 +63,7 @@ body {
 .citrus_Okocat_carousel {
   width: 100%;
   position: relative;
-  display: flex;
+  display: none;
   justify-content: flex-start;
 }
 
