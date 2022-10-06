@@ -116,6 +116,7 @@ body {
   line-height: normal;
   font-weight: 700;
   font-family: "PetcoCircularTT-Bold", arial !important;
+  color: #001952;
   margin: 0;
 }
 
@@ -215,6 +216,7 @@ body {
   display: none;
 }
 .Okocatpet-flex.pov-cta a {
+  font-family: "PetcoCircularTT-Bold", arial !important;
   color: #fff;
   border-radius: 8px;
   text-decoration: none;
